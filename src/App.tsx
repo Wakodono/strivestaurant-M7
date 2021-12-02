@@ -11,7 +11,7 @@ import Details from './components/Details'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+       <BrowserRouter>
         <MyNavbar brand='Strivestaurant' />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path='/details/:pastaId' element={<Details />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
     </div>
   )
 }

@@ -3,9 +3,12 @@ import { useParams } from 'react-router-dom'
 import dishes from '../data/menu.json'
 import DishComments from './DishComments'
 import { Col, Row, Container } from 'react-bootstrap'
+import { Pasta } from '../interfaces/pasta'
 
 const Details = () => {
-  const [pasta, setPasta] = useState(undefined)
+
+  //create the typing and then assing it to the variable/functions
+  const [pasta, setPasta] = useState<Pasta | undefined>(undefined)
 
   const params = useParams()
 
