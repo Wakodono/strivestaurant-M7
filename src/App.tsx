@@ -20,7 +20,7 @@ function App() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/details/:pastaId' element={<Details />} />
           <Route path='*' element={<NotFound />} />
-        </Routes>
+         </Routes>
       </BrowserRouter> 
     </div>
   )

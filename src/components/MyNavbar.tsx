@@ -2,7 +2,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link, useLocation } from 'react-router-dom'
 
-const MyNavbar = (props) => {
+interface IBrand {
+  brand: string
+}
+
+const MyNavbar = (props: IBrand) => {
   const location = useLocation()
 
   return (

@@ -1,7 +1,11 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
-const MyNav = (props) => {
+interface ITitle {
+  title: string
+}
+
+const MyNav = (props: ITitle) => {
   const location = useLocation();
 
   return (
